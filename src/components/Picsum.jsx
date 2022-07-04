@@ -7,7 +7,7 @@ function Picsum() {
   const picsums = useSelector((state) => state.picsumReducer);
   return (
     <section className="picsum">
-      <div className="container border">
+      <div className="container">
         <ul className="pixum-grid">
           {picsums.map((picsum) => (
             <li key={picsum.id} id={picsum.id}>
