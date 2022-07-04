@@ -1,0 +1,18 @@
+.navbar {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 10px 12px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.album {
+  font-size: 12px;
+  align-self: center;
+  border: 1px solid var(--white);
+  width: fit-content;
+  padding: 3px;
+}
