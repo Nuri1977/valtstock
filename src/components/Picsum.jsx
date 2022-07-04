@@ -11,7 +11,7 @@ function Picsum() {
         <ul className="pixum-grid">
           {picsums.map((picsum) => (
             <li key={picsum.id} id={picsum.id}>
-              <NavLink to={`/${picsum.id}`}>
+              <NavLink to={`/home/${picsum.id}`}>
                 <img src={picsum.download_url} alt="" className="picsum-image" />
               </NavLink>
             </li>

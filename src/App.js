@@ -19,7 +19,7 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/home" element={<Picsum />} />
-        <Route path="/:id" element={<PicsumDetail />} />
+        <Route path="/home/:id" element={<PicsumDetail />} />
         <Route path="/" element={<Login />} />
       </Routes>
     </div>
