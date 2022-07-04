@@ -1,0 +1,15 @@
+.picsum {
+  padding: 16px 0;
+}
+
+.pixum-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.picsum-image {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
