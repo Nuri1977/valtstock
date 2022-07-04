@@ -6,6 +6,7 @@ import Picsum from './components/Picsum';
 import PicsumDetail from './components/PicsumDetail';
 import Navigation from './components/Navigation';
 import './App.css';
+import Login from './components/Login';
 
 function App() {
   const dispatch = useDispatch();
@@ -17,8 +18,9 @@ function App() {
     <div>
       <Navigation />
       <Routes>
-        <Route path="/" element={<Picsum />} />
+        <Route path="/home" element={<Picsum />} />
         <Route path="/:id" element={<PicsumDetail />} />
+        <Route path="/" element={<Login />} />
       </Routes>
     </div>
   );

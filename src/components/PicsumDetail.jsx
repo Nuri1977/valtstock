@@ -27,7 +27,7 @@ const PicsumDetail = () => {
         <h3 className="detail-author">{picsum.author}</h3>
 
         <div className="upload-date">28 Novenmer 2022</div>
-        <NavLink to="/">
+        <NavLink to="/home">
           <button type="button" className="btn-secondary">Go back</button>
         </NavLink>
 

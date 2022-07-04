@@ -44,6 +44,10 @@ a {
   display: flex;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .equal-length {
   flex: 1;
 }
