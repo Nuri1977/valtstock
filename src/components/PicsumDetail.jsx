@@ -12,7 +12,6 @@ const PicsumDetail = () => {
       picsum = element;
     }
   });
-  console.log(picsum);
 
   return (
     <section className="flex justify-center">
