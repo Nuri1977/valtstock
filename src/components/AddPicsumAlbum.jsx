@@ -16,8 +16,8 @@ const AddPicsumAlbum = ({ hideCardHandler }) => {
     <Modal hideCardHandler={hideCardHandler}>
       <div className="flex flex-col align-center">
         <div className="flex">
-          <button type="button" className={`btn ${!newAlbum && 'active'}`} onClick={togle} disabled={newAlbum}>CREATE NEW ALBUM</button>
-          <button type="button" className={`btn ${newAlbum && 'active'}`} onClick={togle} disabled={!newAlbum}>ADD TO EXISTING</button>
+          <button type="button" className={`btn ${!newAlbum && 'active1'}`} onClick={togle} disabled={newAlbum}>CREATE NEW ALBUM</button>
+          <button type="button" className={`btn ${newAlbum && 'active1'}`} onClick={togle} disabled={!newAlbum}>ADD TO EXISTING</button>
         </div>
         <form className={`menu1 flex flex-col align-center ${!newAlbum && 'hidden'}`}>
           <input type="text" className="title" placeholder="Enter album title" />
