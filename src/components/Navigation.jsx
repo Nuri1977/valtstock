@@ -15,6 +15,7 @@ const Navigation = () => (
         <div className="album">My albums</div>
       </div>
     </div>
+    <div className="empty-div" />
   </menu>
 
 );
