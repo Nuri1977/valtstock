@@ -11,8 +11,10 @@ import AddPicsumAlbum from './components/AddPicsumAlbum';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
-  const showCardHandler = () => {
+  const [picsumId, setPicsumId] = useState('');
+  const showCardHandler = (picsum) => {
     setShowModal(true);
+    setPicsumId(picsum);
   };
   const hideCardHandler = () => {
     setShowModal(false);
@@ -35,6 +37,7 @@ function App() {
       && (
       <AddPicsumAlbum
         hideCardHandler={hideCardHandler}
+        id={picsumId}
       />
       )}
     </div>

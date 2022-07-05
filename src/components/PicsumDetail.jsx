@@ -18,7 +18,7 @@ const PicsumDetail = ({ showCardHandler }) => {
     <section className="flex justify-center">
       <div className="container picsum-detail text-center">
         <div className="flex justify-center">
-          <button type="button" className="btn-secondary" onClick={showCardHandler}>Add to Album +</button>
+          <button type="button" className="btn-secondary" onClick={() => showCardHandler(picsum)}>Add to Album +</button>
           <button type="button" className="btn-primary">Download</button>
         </div>
         <div className="detail-image">
