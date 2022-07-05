@@ -29,7 +29,7 @@ function App() {
     <div>
       <Navigation />
       <Routes>
-        <Route path="/home" element={<Picsum />} />
+        <Route path="/home" element={<Picsum showCardHandler={showCardHandler} />} />
         <Route path="/home/:id" element={<PicsumDetail showCardHandler={showCardHandler} />} />
         <Route path="/" element={<Login />} />
       </Routes>

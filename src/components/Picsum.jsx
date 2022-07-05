@@ -1,9 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import './Picsum.css';
 
-function Picsum() {
+function Picsum({ showCardHandler }) {
   const picsums = useSelector((state) => state.picsumReducer);
   return (
     <section className="picsum">
@@ -12,8 +13,12 @@ function Picsum() {
           {picsums.map((picsum) => (
             <li key={picsum.id} id={picsum.id}>
               <NavLink to={`/home/${picsum.id}`}>
-                <img src={picsum.download_url} alt="" className="picsum-image" />
+                <div className="image-container" id="image-container">
+                  <img src={picsum.download_url} alt="" className="picsum-image" />
+                  <button type="button" className="add-album hidden" onClick={() => showCardHandler(picsum)}>Add to Album</button>
+                </div>
               </NavLink>
+
             </li>
           ))}
         </ul>
@@ -21,5 +26,9 @@ function Picsum() {
     </section>
   );
 }
+
+Picsum.propTypes = {
+  showCardHandler: PropTypes.func.isRequired,
+};
 
 export default Picsum;
