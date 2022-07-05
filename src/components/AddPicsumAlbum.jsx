@@ -28,7 +28,7 @@ const AddPicsumAlbum = ({ hideCardHandler }) => {
         </form>
         <form className={`menu2 flex flex-col align-center ${newAlbum && 'hidden'}`}>
           {albums.map((album) => (
-            <div className="flex justify-center align-center">
+            <div className="flex aling-start">
               <input
                 key="album.id"
                 type="checkbox"
