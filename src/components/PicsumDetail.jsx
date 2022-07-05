@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useParams, NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './PicsumDetail.css';
 
-const PicsumDetail = () => {
+const PicsumDetail = ({ showCardHandler }) => {
   const { id } = useParams();
   const picsums = useSelector((state) => state.picsumReducer);
   let picsum = [];
@@ -17,7 +18,7 @@ const PicsumDetail = () => {
     <section className="flex justify-center">
       <div className="container picsum-detail text-center">
         <div className="flex justify-center">
-          <button type="button" className="btn-secondary">Add to Album +</button>
+          <button type="button" className="btn-secondary" onClick={showCardHandler}>Add to Album +</button>
           <button type="button" className="btn-primary">Download</button>
         </div>
         <div className="detail-image">
@@ -34,6 +35,10 @@ const PicsumDetail = () => {
       </div>
     </section>
   );
+};
+
+PicsumDetail.propTypes = {
+  showCardHandler: PropTypes.func.isRequired,
 };
 
 export default PicsumDetail;
